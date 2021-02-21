@@ -1,3 +1,6 @@
+import numpy as np
+from scipy.spatial import distance
+
 def find_all_distances(ds,distance_type='euclidean'):
     D = distance.cdist(ds, ds, 'euclidean')
 
